@@ -15,7 +15,7 @@ public class nfakultet {
 		int n = 0;
 		
 		while (true) {
-			// page 295
+			// side. 295 i boken
 			try {
 				String input = showInputDialog("Skriv et tall høyere enn 0: ");
 				n = Integer.parseInt(input);
@@ -24,10 +24,10 @@ public class nfakultet {
 				}
 				
 			} catch (NumberFormatException e) {
-				//
+				// Fanger opp ugyldig input
 			}
 			
-			showMessageDialog(null, "FEIL TALL!!!! *ERROR* *ERROR* PRØV IGJEN");
+			showMessageDialog(null, "FEIL TALL!!!! *ERROR* *ERROR* PRØV IGJEN"); // (Overdramatisk) Feilmelding
 			
 		}
 		
@@ -35,13 +35,13 @@ public class nfakultet {
 		showMessageDialog(null, "Resultatet av fakultetet er " + resultat);
 	}	
 	
-	public static int fakultet (int tall) {
+	public static int fakultet (int tall) { //n = tall
 		int startTall = 1;
 		
 		for (int factor = 1; factor <= tall; factor++) {
-			startTall *= factor; //starttall = starttall * factor
+			startTall *= factor; // starttall = starttall * factor
 		}
 		
-		return startTall;
+		return startTall; // Resultatet av utregningen
 	}
 }
